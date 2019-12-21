@@ -24,8 +24,8 @@ RUN echo "@community https://nl.alpinelinux.org/alpine/v3.6/community" >> /etc/a
     php7-imap@community \
     php7-mysqli@community \
     php7-session@community \
-    php7-mbstring@community \
- && cd /tmp \
+    php7-mbstring@community 
+ RUN cd /tmp \
  && PFA_TARBALL="postfixadmin-${VERSION}.tar.gz" \
  && wget -q https://downloads.sourceforge.net/project/postfixadmin/postfixadmin/postfixadmin-${VERSION}/${PFA_TARBALL} \
  && wget -q https://downloads.sourceforge.net/project/postfixadmin/postfixadmin/postfixadmin-${VERSION}/${PFA_TARBALL}.asc \
